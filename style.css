@@ -1,5 +1,5 @@
 *{
-    background-color: lightgoldenrodyellow;
+    background-color: lightgoldenrodyellow);
 }
 .ban{
     background-color: lightblue;
@@ -106,6 +106,7 @@ h4{
     right: 0;
     text-align: center;
     z-index: 10;
+    background-color: #428bca00;
 }
 .slide-indicador li {
     display: inline-block;

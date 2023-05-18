@@ -1,5 +1,5 @@
 *{
-    background-color: lightgoldenrodyellow);
+    background-color: lightgoldenrodyellow;
 }
 .ban{
     background-color: lightblue;
@@ -37,8 +37,8 @@ h4{
 }
 
 .slide {
-    position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    position:relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 1);
     margin-top: 26px;
 }
 .slide-inner {
@@ -59,9 +59,15 @@ h4{
 }
 .slide-item img {
     display: block;
-    height: auto;
-    max-width: 100%;
+    max-width: 480px;
 }
+@media only screen and (max-width: 480px) {
+    img {
+    width: 100%;
+    }
+}
+
+
 .slide-control {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
@@ -84,6 +90,7 @@ h4{
 .slide-control.prev {
     left: 2%;
 }
+
 .slide-control.next {
     right: 2%;
 }
@@ -122,11 +129,11 @@ h4{
     color: #aaaaaa;
 }
 #slide-1:checked ~ .control-1 ~ .slide-indicador 
-     li:nth-child(1) .slide-circulo,
+    li:nth-child(1) .slide-circulo,
 #slide-2:checked ~ .control-2 ~ .slide-indicador 
-      li:nth-child(2) .slide-circulo,
+    li:nth-child(2) .slide-circulo,
 #slide-3:checked ~ .control-3 ~ .slide-indicador 
-      li:nth-child(3) .slide-circulo {
+    li:nth-child(3) .slide-circulo {
     color: #428bca;
 }
 #titulo {
@@ -140,5 +147,5 @@ h4{
     font-family: 'Open Sans', sans-serif;
     z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
-         -1px 0px 2px rgba(255, 255, 255, 0);
+    -1px 0px 2px rgba(255, 255, 255, 0);
 }

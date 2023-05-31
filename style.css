@@ -202,3 +202,8 @@ h1{
     color: #428bca;
 }
 
+h2{
+    font-family: fonte1;
+    src: url(font/merchandise-font/Merchandise-X31Za.ttf) format('opentype');
+    letter-spacing: 2px;
+}

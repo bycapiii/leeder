@@ -92,7 +92,7 @@ h1{
 .menu-content a {
     display: block;
     color: #000000;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
 }
 .menu-content a:hover {
@@ -101,7 +101,7 @@ h1{
 }
 .slide {
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 1);
+    /* box-shadow: 0px 1px 6px rgba(0, 0, 0, 1); */
     margin-top: 30px;
 }
 .slide-inner {
@@ -109,7 +109,7 @@ h1{
     overflow: hidden;
     width: 100%;
     height: calc( 400px + 4em);
-    background-color: rgb(216, 244, 253);
+    background-color: rgba(216, 244, 253, 0);
 
 }
 .slide-open:checked + .slide-item {
@@ -119,8 +119,6 @@ h1{
 .slide-item {
     position: absolute;
     opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
-    transition: opacity 0.6s ease-out;
     width: 640px; 
     padding: 30px;
     margin:auto;

@@ -1,9 +1,8 @@
-body {
+
+body{
     background-image: url(https://i.pinimg.com/564x/98/fe/35/98fe35894196c430847b2f32e4b4875a.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 @font-face {
@@ -24,12 +23,15 @@ body {
 .container {
     margin: 0px;
     border: 0px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image:url(img/nubes.avif);
+    /* position:fixed; */
 }
 
 .ban {
-    width: 100%;
     display: flex;
-    padding: 10px;
+    padding: 0px;
 }
 
 .col1 {
@@ -43,15 +45,20 @@ body {
     margin-left: 40px;
     color: blue;
     flex: 3;
+    max-width: 100%;
+    text-align: center;
 }
 
 .col3 {
-
     display: flex;
     flex: 3;
-    color: blue;
     justify-content: end;
     padding-right: 10%;
+}
+
+button{
+border-style: none;
+background-color: #00000000;
 }
 
 h1 {
@@ -86,7 +93,7 @@ h1 {
 .menu {
     display: inline-block;
     position: relative;
-    }
+}
 
 .menu-content {
     display: none;
@@ -113,11 +120,16 @@ h1 {
     color: #1900ff;
     background-color: #fffb00a4;
 }
+.cuerpo{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 .slide {
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 1);
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 1);
     margin-top: 100px;
+    /* max-width: 1 */
 }
 
 .slide-inner {
@@ -126,7 +138,7 @@ h1 {
     overflow: hidden;
     width: 100%;
     height: calc(400px + 4em);
-    background-color: rgba(216, 244, 253, 0);
+    background-color: rgba(22, 178, 230, 0.24);
 
 }
 
@@ -136,18 +148,19 @@ h1 {
 }
 
 .slide-item {
-    position: absolute;
+    position:fixed;
     opacity: 0;
     width: 640px;
     padding: 30px;
-    margin: auto;
+    /* margin: auto;  */
 }
 
 .slide-item img {
-    margin-top: 0%;
+    /* margin-top: 0%; */
     display: block;
-    width: 100%;
-    height: 400px;
+    width: 60%;
+    justify-items: center;
+    /* height: 60%; */
 
 }
 
@@ -267,4 +280,9 @@ p {
     font-size: 40px;
 }
 .equipo{
+    align-items: center;
+    max-width: 100%;
+}
+li{
+    list-style: none;
 }

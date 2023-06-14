@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 
 body{
     background-image: url(https://i.pinimg.com/564x/98/fe/35/98fe35894196c430847b2f32e4b4875a.jpg);
@@ -21,7 +26,8 @@ body{
 }
 
 .container {
-    margin: 0px;
+    padding-top: 5rem;
+    padding-bottom: 15rem;
     border: 0px;
     background-size:cover;
     background-repeat: no-repeat;
@@ -31,6 +37,7 @@ body{
 
 .ban {
     display: flex;
+    justify-content: space-between;
     padding: 0px;
 }
 
@@ -38,7 +45,6 @@ body{
     flex: 3;
     width: 250px;
     border-radius: 150px;
-
 }
 
 .col2 {
@@ -62,10 +68,9 @@ background-color: #00000000;
 }
 
 h1 {
-
     text-align: center;
-    letter-spacing: 10px;
-    font-size: 70px;
+    letter-spacing: 40px;
+    font-size: 100px;
     font-family: fonte2;
     src: url(font/modular/MODULAR-14.otf) format('opentype');
 
@@ -100,12 +105,12 @@ h1 {
     position: absolute;
     overflow: auto;
     font-size: 40px;
-    box-shadow: 20px 15px 10px 0px rgba(0, 0, 0, 0.507);
+    box-shadow: 20px 0px 10px 0px rgba(0, 0, 0, 0.507);
 }
 
 .menu:hover .menu-content {
     display: block;
-    width: 300%;
+    width: 400%;
 }
 
 .menu-content a {
@@ -126,14 +131,15 @@ h1 {
 }
 
 .slide {
-    position: relative;
+
     box-shadow: 10px 5px 15px rgba(0, 0, 0, 1);
     margin-top: 100px;
     /* max-width: 1 */
 }
 
 .slide-inner {
-    margin-top: 200px;
+    display: flex;
+    justify-content: center;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -149,6 +155,9 @@ h1 {
 
 .slide-item {
     position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     width: 640px;
     padding: 30px;
@@ -280,9 +289,14 @@ p {
     font-size: 40px;
 }
 .equipo{
-    align-items: center;
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    overflow: hidden;
     max-width: 100%;
+
 }
+
 li{
     list-style: none;
 }
